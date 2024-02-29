@@ -1,0 +1,131 @@
+.hide-section-button {
+  display: inline-block;
+  background: #37bbed;
+  color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  font-weight: bold;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+.select-layers-container label {
+  transition: all .25s ease-in;
+}
+.all-layers-checkbox {
+  margin-bottom: 0px;
+  padding-bottom: 6px;
+}
+#wrongURL {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 0;
+  display: none;
+}
+#buttonEnd {
+  margin-left: auto;
+  /* margin-right: 18px; */
+  display: none;
+}
+.page-header {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 0;
+}
+.page-header .title-service {
+  display: flex;
+  align-items: center;
+}
+.page-header .title-service h5 {
+  color: #37bbed;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  font-size: 16px;
+}
+.page-header .title-service button {
+  background: none;
+  color: #37bbed;
+  border: none;
+}
+.page-header .title-service .title-input-service {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #37bbed;
+  display: none;
+  width: 80%;
+}
+.page-header small {
+  display: block;
+  margin-top: 4px;
+}
+#buttonConectar {
+  cursor: pointer;
+  background-color: #37bbed;
+  color: #fff;
+}
+#buttonConectar:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+#select-layers-container {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+#select-layers-container label {
+  font-weight: normal;
+  width: 100%;
+  border-left: 1px solid #27168830;
+  margin-bottom: 0px;
+}
+.tree-line {
+  color: #27168830;
+  margin-right: 4px;
+}
+.loadservice-layer-img {
+  cursor: pointer;
+  width: 15%;
+  text-align: center;
+  opacity: 0.6;
+}
+.loadservice-layer-img img {
+  height: 20px;
+}
+#modalLoadServices {
+  margin: 5px;
+}
+#modalloadservices :hover {
+  background-color: #f4f4f4;
+}
+#iconloadservices-container {
+  height: 100%;
+  width: 100%;
+  flex: 4;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  border-color: #cccccc;
+}
+.icons-modalservices {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  top: 5px;
+}
+/* #btnclose-icon-modalservices {
+  text-align: right;
+  width: 5%;
+} 
+#title-icon-modalfile {
+  text-align: center;
+  width: 95%;
+  color: #3f3f3f;
+} 
+.icon-modalfile {
+  display: inline-block;
+} */

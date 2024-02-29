@@ -1,0 +1,13 @@
+#pdfPrinter :hover {
+  background-color: #f5f4f4;
+  cursor: pointer;
+}
+
+#pdfPrinter :active {
+  background-color: grey;
+}
+
+#iconPDF {
+  font-size: 16px;
+  line-height: inherit;
+}

@@ -1,0 +1,226 @@
+{
+  "items": [
+    {
+      "type": "basemap",
+      "peso": 1,
+      "nombre": "Mapas base",
+      "short_abstract": "",
+      "class": "",
+      "seccion": "mapasbase",
+      "capas": [
+        {
+          "titulo": "Argenmap",
+          "nombre": "argenmap",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "<a href='https://www.ign.gob.ar/AreaServicios/Argenmap/IntroduccionV2' target='_blank'>Instituto Geográfico Nacional</a> + <a href='https://www.osm.org/copyright' target='_blank'>OpenStreetMap</a>",
+          "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
+          "legendImg": "src/styles/images/argenmap.png",
+          "peso": 30,
+          "selected": false,
+          "zoom": {
+            "min": 3,
+            "max": 21,
+            "nativeMin": 3,
+            "nativeMax": 20
+          }
+        },
+        {
+          "titulo": "Google Satellite",
+          "nombre": "esri_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Google Maps 2023 © Google",
+          "host": "http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}",
+          "legendImg": "src/styles/images/esri.png",
+          "peso": 30,
+          "zoom": {
+            "min": 3,
+            "max": 21,
+            "nativeMin": 3,
+            "nativeMax": 20
+          }
+        },
+        {
+          "titulo": "OSM Standard",
+          "nombre": "open_imagery",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "© OpenStreetMap",
+          "host": "http://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          "legendImg": "src/styles/images/osm_standard_map.png",
+          "peso": 10,
+          "selected": true,
+          "zoom": {
+            "min": 3,
+            "max": 20,
+            "nativeMin": 3,
+            "nativeMax": 20
+          }
+        },
+        {
+          "titulo": "Google Maps",
+          "nombre": "Google",
+          "servicio": "tms",
+          "version": "1.0.0",
+          "attribution": "Google Maps 2023 © Google",
+          "host": "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}",
+          "legendImg": "src/styles/images/google-maps-map.png",
+          "peso": 20,
+          "zoom": {
+            "min": 3,
+            "max": 21,
+            "nativeMin": 3,
+            "nativeMax": 21
+          }
+        }
+      ]
+    },
+    {
+      "type": "wmslayer",
+      "peso": 80,
+      "nombre": "Catastro",
+      "short_abstract": "Seccion Catastral, chacras, cuaterles, fraccion, manzanas, parcelas",
+      "class": "",
+      "seccion": "catastro",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/catastro/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 90,
+      "nombre": "Censos y Estadisticas",
+      "short_abstract": "Censos y Estadisticas",
+      "class": "",
+      "seccion": "censos-estadisticas",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/estadisticas_censos/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 100,
+      "nombre": "Cultura y Turismo",
+      "short_abstract": "Estaciones de servicio, Alojamientos extrahoteleros, hoteleria, monumentos, sitios patrimoniales, sitios gastronomicos",
+      "class": "",
+      "seccion": "cultura_turismo",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/cultura_turismo/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 110,
+      "nombre": "Educacion y deportes",
+      "short_abstract": "Educacion y deportes",
+      "class": "",
+      "seccion": "educacion-deportes",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/educacion-y-deportes/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 120,
+      "nombre": "Geografía y Ambiente",
+      "short_abstract": "Contenedores Taller ALMA, espacios verdes, cuerpos y cursos de agua, Limites territoriales, Punto limpio, Restricción agroquimicos, Humedales",
+      "class": "",
+      "seccion": "geografia_ambiente",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/geografia_ambiente/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 130,
+      "nombre": "Obras públicas y servicios",
+      "short_abstract": "Luminarias, Estabilizado, Red Agua",
+      "class": "",
+      "seccion": "obras_publicas_servicios",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/obras_publicas_servicios/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 130,
+      "nombre": "Organismos",
+      "short_abstract": "Asociaciones profesionales, Instituciones Municipales, Nacionales y Religiosas, Organizaciones sindicales",
+      "class": "",
+      "seccion": "organismos",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/organismos/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 130,
+      "nombre": "Producción y Comercio",
+      "short_abstract": "Agropecuario, Apiarios, Cajeros, Comercios Cooperativas, Empresas, Organizaciones profesionales",
+      "class": "",
+      "seccion": "produccion_comercio",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/produccion_comercio/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 140,
+      "nombre": "Salud y Desarrollo Social",
+      "short_abstract": "Instituciones Sanitarias, Farmacias, Adultos Mayores, Discapacidad",
+      "class": "",
+      "seccion": "salud_desarrollo_social",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/salud_desarrollo_social/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 150,
+      "nombre": "Seguridad y emergencias",
+      "short_abstract": "Fuerzas de Seguridad",
+      "class": "",
+      "seccion": "seguridad_emergencias",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/seguridad_emergencias/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 160,
+      "nombre": "Servicios Públicos",
+      "short_abstract": "Redes Electricas",
+      "class": "",
+      "seccion": "servicios_publicos",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/servicios_publicos/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 170,
+      "nombre": "Planeamiento Urbano",
+      "short_abstract": "Barrios, Bicisendas, Calles, Estacionamiento medido, Estacionamiento y garage, Reductores de velocidad",
+      "class": "",
+      "seccion": "planeamiento_urbano",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/planeamiento_urbano/wms"
+    },
+    {
+      "type": "wmslayer",
+      "peso": 180,
+      "nombre": "Zona de restricción y exclusión de agroquimicos",
+      "short_abstract": "Zona de restricción y exclusión de agroquimicos",
+      "class": "",
+      "seccion": "resticcion_exclusion_agroquimicos",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "http://mapas.lasflores.net.ar:8080/geoserver/restriccion_exclusion_agroquimicos/wms"
+    }
+  ],
+  "template": "ign-geoportal-basic"
+}
+
+
